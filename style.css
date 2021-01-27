@@ -25,7 +25,7 @@ body {
 }
 
 .centre{text-align:center;}
-
+.left{text-align: left;}
 .divider{
 	margin:auto;
 	width:50%;
@@ -33,7 +33,6 @@ body {
 	margin:20px auto 20px auto;}
 	
 .display-middle{
-	text-align: left;
 	margin-top: 65px;
 	width:100%;
 	min-width:300px;
@@ -44,8 +43,10 @@ body {
 	padding: 20px;}
 	
 	
-.answers {margin: auto;
-max-width: 400px;}
+.answers {
+	text-align:left;
+	display:inline-block;
+	margin: 0 auto;}
 	
 .footer {
 	margin-top: 60px;
@@ -83,8 +84,8 @@ h3 {
 	line-height:32px;
   }
     h3{
-    font-size: 16px;
-	line-height:10px;
+    font-size: 21px;
+	line-height:21px;
   }
   
 }
