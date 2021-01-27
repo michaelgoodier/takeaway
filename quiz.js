@@ -35,7 +35,7 @@ var questionList = [
 	}, 
 	result:{
 		a: 5,
-		b: 'a Pizza.',
+		b: 'a pizza.',
 	}
 },
 {
@@ -110,7 +110,6 @@ function showQuestion(questionNumber,questionList){
 					'<p>'
 					+ '<label>'
 					+ '<input type="radio" name="'+letter+'" value="'+obj.result[letter]+'" onclick="showQuestion(this.value,questionList)" class="button"> '
-					+ letter.toUpperCase() + ': '
 					+ obj.answers[letter]
 					+ '</label>'
 					+ '</p>'
