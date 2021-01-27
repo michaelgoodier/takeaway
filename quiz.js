@@ -116,7 +116,7 @@ function showQuestion(questionNumber,questionList){
 					);
 				}
 					output.push(
-					'<div class="question"><h3>' + obj.question + '</h3></div>'
+					'<div class="question"><h3 class="centre">' + obj.question + '</h3></div>'
 					+ '<div class="answers">' + answers.join('') + '</div>'
 					);
 					console.log(output)

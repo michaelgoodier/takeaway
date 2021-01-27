@@ -13,13 +13,15 @@ body {
 	background-size: 350px;
 	font-family: "Raleway", sans-serif; 
 	line-height: 1em;
-	height: 100%;
 }
-h1 {
-	font-family: "Patua One", cursive;
-	font-size: 48px;
-	line-height: 48px;
-	padding: 0px;
+
+.wrapper { 
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .centre{text-align:center;}
@@ -31,24 +33,59 @@ h1 {
 	margin:20px auto 20px auto;}
 	
 .display-middle{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	width:65%;
+	text-align: left;
+	margin-top: 65px;
+	width:100%;
 	min-width:300px;
-	max-width:900px;
-	min-height: 50%;
+	max-width:800px;
+	min-height: 500px;
 	background: #FFFFFF;
 	border: solid 20px #92B4E5;
 	padding: 20px;}
 	
+	
+.answers {margin: auto;
+max-width: 400px;}
+	
 .footer {
-	position:absolute;
-	left:0;
-	bottom:0;
-	padding:12px 24px;
-	color: #92B4E5;
-	background-color:rgba(255, 255, 255, 0.5);
+	margin-top: 60px;
+	color: #000000;
+	background-color:rgba(255, 255, 255, 0.7);
+	width:100%;
+	min-width:300px;
+	max-width:900px;
 }
+h1 {
+	font-family: "Patua One", cursive;
+	font-size: 48px;
+	line-height: 48px;
+	padding: 0px;
+}
+h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	line-height: 48px;
+	padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+  
+  .display-middle{
+    width: calc(100% - 64px - 32px - 40px);
+	margin: auto;
+  }
+  
+  h1{
+    font-size: 32px;
+	line-height:32px;
+  }
+    h3{
+    font-size: 16px;
+	line-height:10px;
+  }
+  
+}
+*/
