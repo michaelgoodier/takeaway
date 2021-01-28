@@ -1,4 +1,4 @@
-//list of questions
+//json list of questions and takeaway options
 var questionList = [
 {
 	key:1, 
@@ -202,12 +202,8 @@ var questionList = [
 	}
 }
 ]
-// function to check ig
 
-
-//set default postcode
-let pc = 'bn3 1tp'
-//function to display questions, or results if it is a result
+//function to display questions, or takeaway options
 function showQuestion(questionNumber,questionList){
 
 	var quizContainer = document.getElementById('quiz');
@@ -235,7 +231,7 @@ function showQuestion(questionNumber,questionList){
 					);
 				}
 				//if not first page 
-				if(obj.key!=1){back_button  = '<div><div class="button" onclick="showQuestion('+obj.back+',questionList)"><<< Back</div></div>'}
+				if(obj.key!=1){back_button  = '<div><div class="button ready" onclick="showQuestion('+obj.back+',questionList)"><<< Back</div></div>'}
 				output.push(
 				'<div class="header"><h3 class="centre">' + obj.header + '</h3></div>'
 				+ '<div class="options">' + options.join('') + '</div>'
@@ -252,7 +248,7 @@ function showQuestion(questionNumber,questionList){
 				+ '<img src="images/'+obj.logo+'" class="logo" />'
 				+ '<div class="delivery_links">'
 				+ '<p> Order '+obj.header+' to <input type="text" placeholder="your postcode" name="postcode" id="postcode" autocomplete="off"> on </p>'
-				+ '<div class="button_row"><a href="https://www.just-eat.co.uk/area/'+pc+justeat+'" id="justeatlink" target="_blank"><div class="button">Just Eat</div></a> or <a href="https://deliveroo.co.uk/restaurants/example/place?postcode='+pc+deliveroo+'" id="deliveroolink" target="_blank"><div class="button">Deliveroo</div></a></div>'
+				+ '<div class="button_row"><a id="justeatlink" target="_blank"><div class="button">Just Eat</div></a> or <a id="deliveroolink" target="_blank"><div class="button">Deliveroo</div></a></div>'
 				+ '<p><a onclick="showQuestion('+1+',questionList)">Start again</a></p>'
 				+ '</div>'
 				);	
@@ -266,22 +262,55 @@ function showQuestion(questionNumber,questionList){
    	document.querySelector('input').addEventListener("keydown", resizeInput); // resize postcode box when postcode entered
 	document.querySelector('input').addEventListener("keyup", changeLinks);// change links when postcode entered
 }
+
 //function to resize postcode box
 function resizeInput() {
 	var key = event.key
-	  if(key === "Backspace" || key === "Delete"){
-		 var width = this.value.length - 1.5;
-		  } else {
-		 var width = this.value.length + 1.5;}
-	this.style.width = width + "ch" ;
-	document.getElementById("justeatlink").href= 'https://www.just-eat.co.uk/area/'+pc+justeat;
-	
+	//if backspace delete width
+	if(key === "Backspace" || key === "Delete"){
+		var width = this.value.length - 0.5;
+	//if other key add width
+	} else {
+		var width = this.value.length + 1.5;
+	}
+	//set width
+	this.style.width = width + "ch" ;	
 }
-//function to change links
+
+//function to check if postcode is valid
+function isValidPostcode(p) { 
+    var postcodeRegEx = /[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}/i; 
+    return postcodeRegEx.test(p); 
+}
+
+//function to activate links
 function changeLinks() {
-	pc = this.value
-	document.getElementById("justeatlink").href= 'https://www.just-eat.co.uk/area/'+pc+justeat;
-	document.getElementById("deliveroolink").href= 'https://deliveroo.co.uk/restaurants/example/place?postcode='+pc+deliveroo;
+	pc= this.value;
+	justeatlink = document.getElementById("justeatlink");
+	deliveroolink = document.getElementById("deliveroolink");
+    //when zero set to placeholder width and link 
+	if(pc.length==0){
+		this.style.width = "11ch";
+	}
+	//when valid postcode
+	if(isValidPostcode(pc)){
+		//update links
+		justeatlink.href= 'https://www.just-eat.co.uk/area/'+pc+justeat;
+		deliveroolink.href= 'https://deliveroo.co.uk/restaurants/example/place?postcode='+pc+deliveroo;
+		//update styling
+		justeatlink.querySelector("div").classList.add("ready");
+		deliveroolink.querySelector("div").classList.add("ready");
+	} else {
+		//remove active styling
+		justeatlink.querySelector("div").classList.remove("ready");
+		deliveroolink.querySelector("div").classList.remove("ready");
+		//remove href if it exists
+		if(deliveroolink.hasAttribute("href")){
+			deliveroolink.removeAttribute("href");
+			justeatlink.removeAttribute("href");
+		}
+		
+	}
 }
-//show question 1
+//show question 1 on page load
 showQuestion(1,questionList)

@@ -73,16 +73,22 @@ h3 {
 
 .button{
 	display: inline-block;
-    color: #92B4E5;
-    border: 2px solid #92B4E5;	
+    color: #555;
+    border: 2px solid #555;	
 	padding:10px 20px 10px 20px;
 }
+
+.ready{
+	color: #92B4E5;
+	border: 2px solid #92B4E5;
+	padding:10px 20px 10px 20px;}
+
 
 .button-row{
 	display:inline-block;
 	padding:20px,auto,20px,auto;
 }
-.button:hover {
+.ready:hover {
     background: #eee;
 }
 
