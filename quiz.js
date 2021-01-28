@@ -34,7 +34,7 @@ var questionList = [
 	key:2, 
 	back:1,
 	type: 'q',
-	header: "Which describes you mood better?", 
+	header: "Which describes your mood better?", 
 	options: {
 		a: 'Honestly, I don\'t want to move.', 
 		b: 'Just feel like over-indulging with something a bit greasy'
@@ -205,9 +205,7 @@ var questionList = [
 // function to check ig
 
 
-//first we set question number to 1
-var questionNumber = 1
-	//set default postcode
+//set default postcode
 let pc = 'bn3 1tp'
 //function to display questions, or results if it is a result
 function showQuestion(questionNumber,questionList){
@@ -279,11 +277,11 @@ function resizeInput() {
 	document.getElementById("justeatlink").href= 'https://www.just-eat.co.uk/area/'+pc+justeat;
 	
 }
+//function to change links
 function changeLinks() {
 	pc = this.value
 	document.getElementById("justeatlink").href= 'https://www.just-eat.co.uk/area/'+pc+justeat;
 	document.getElementById("deliveroolink").href= 'https://deliveroo.co.uk/restaurants/example/place?postcode='+pc+deliveroo;
 }
-
+//show question 1
 showQuestion(1,questionList)
-// on submit, show results
