@@ -237,7 +237,7 @@ function showQuestion(questionNumber,questionList){
 					);
 				}
 				//if not first page 
-				if(obj.key!=1){back_button  = '<div><div id="return_button" onclick="showQuestion('+obj.back+',questionList)"><<< Back</div></div>'}
+				if(obj.key!=1){back_button  = '<div><div class="button" onclick="showQuestion('+obj.back+',questionList)"><<< Back</div></div>'}
 				output.push(
 				'<div class="header"><h3 class="centre">' + obj.header + '</h3></div>'
 				+ '<div class="options">' + options.join('') + '</div>'
@@ -253,9 +253,10 @@ function showQuestion(questionNumber,questionList){
 				'<div class="header"><h3 class="centre">You should order ' + obj.header + '</h3></div>'
 				+ '<img src="images/'+obj.logo+'" class="logo" />'
 				+ '<div class="delivery_links">'
-				+ '<p> Order '+obj.header+' to <input type="text" placeholder="your postcode" name="postcode" id="postcode" autocomplete="off"> on <a href="https://www.just-eat.co.uk/area/'+pc+justeat+'" id="justeatlink">Just Eat</a> or <a href="https://deliveroo.co.uk/restaurants/exeter/exeter-city-centre?postcode='+pc+deliveroo+'" id="deliveroolink">Deliveroo</a>.'
+				+ '<p> Order '+obj.header+' to <input type="text" placeholder="your postcode" name="postcode" id="postcode" autocomplete="off"> on </p>'
+				+ '<div class="button_row"><a href="https://www.just-eat.co.uk/area/'+pc+justeat+'" id="justeatlink" target="_blank"><div class="button">Just Eat</div></a> or <a href="https://deliveroo.co.uk/restaurants/example/place?postcode='+pc+deliveroo+'" id="deliveroolink" target="_blank"><div class="button">Deliveroo</div></a></div>'
+				+ '<p><a onclick="showQuestion('+1+',questionList)">Start again</a></p>'
 				+ '</div>'
-				+ '<div><div id="return_button" onclick="showQuestion('+1+',questionList)">Start again</div></div>'
 				);	
 			}			
 				
