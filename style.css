@@ -10,7 +10,7 @@ body {
 	  #B5D8F2 40px);
 	background-image: url("images/bg.png");
 	background-repeat: repeat;
-	background-size: 350px;
+	background-size: 450px;
 	font-family: 'IBM Plex Sans', sans-serif; 
 	line-height: 1em;
 }
@@ -52,7 +52,9 @@ main{
 .footer {
 	margin-top: 60px;
 	color: #000000;
-	background-color:rgba(255, 255, 255, 0.7);
+	text-shadow: #FFF 0px 0px 4px,   #FFF 0px 0px 4px,   #FFF 0px 0px 4px,
+             #FFF 0px 0px 4px,   #FFF 0px 0px 4px,   #FFF 0px 0px 4px;
+	font-size:18px
 	width:100%;
 	min-width:300px;
 	max-width:900px;
