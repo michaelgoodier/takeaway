@@ -37,7 +37,6 @@ main{
 	width:100%;
 	min-width:300px;
 	max-width:800px;
-	min-height: 400px;
 	background: #FFFFFF;
 	border: solid 20px #92B4E5;
 	padding: 20px;}
@@ -66,7 +65,7 @@ h1 {
 h3 {
 	font-family: "Raleway", sans-serif;
 	font-size: 26px;
-	line-height: 48px;
+	line-height: 26px;
 	padding: 0px;
 }
 
@@ -109,12 +108,12 @@ input[type="text"]:focus {
 
 
 @media only screen and (max-width: 600px) {
-  .wrapper {
+  main {
     width: 100%;
   }
   
   .display-middle{
-    width: calc(100% - 64px - 32px - 40px);
+    width: calc(100% - 0px  - 40px);
 	margin: auto;
   }
   
