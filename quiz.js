@@ -11,9 +11,23 @@ var questionList = [
 		c: 'I can\'t be bothered to cook, but sort-of want something healthy.'
 	}, 
 	result:{
-		a: 2,
+		a: 16,
 		b: 3,
 		c: 4
+	}
+},
+{
+	key:16, 
+	back:1,
+	type: 'q',
+	header: "Which would you prefer:", 
+	options: {
+		a: 'A bit of variety with my order, at least two elements to the meal.', 
+		b: 'I\'m okay eating just one thing for ages.'
+	}, 
+	result:{
+		a: 14,
+		b: 2
 	}
 },
 {
