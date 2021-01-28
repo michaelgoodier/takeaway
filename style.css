@@ -115,6 +115,7 @@ input[type="text"]:focus {
   .display-middle{
     width: calc(100% - 0px  - 40px);
 	margin: auto;
+	margin-top: 20px;
   }
   
   h1{
