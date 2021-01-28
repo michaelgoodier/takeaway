@@ -87,7 +87,9 @@ h3 {
     background: #eee;
 }
 
-a{ color: #92B4E5;
+a { 
+color: #92B4E5;
+text-decoration: underline;
 }
 input[type="text"] {
     width: 11ch;
