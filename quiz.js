@@ -6,7 +6,7 @@ var questionList = [
 	type: 'q',
 	header: "What mood are you in?", 
 	options: {
-		a: 'I don\'t give a fuck about my health, I want to massively gorge / I\'m feeling depressed.', 
+		a: 'I couldn\'t care any less about my health, I want to massively gorge / I\'m feeling depressed.', 
 		b: 'I feel like a bit of comfort indulgment on a night in, maybe watching a film for example.', 
 		c: 'I can\'t be bothered to cook, but sort of want something healthy.'
 	}, 
