@@ -211,7 +211,6 @@ function showQuestion(questionNumber,questionList){
 		if(obj.key == questionNumber){
 			//if a question
 			if(obj.type == "q"){
-				back = obj.back
 				for(letter in obj.options){
 					// ...add an html radio button
 					options.push(
@@ -242,6 +241,7 @@ function showQuestion(questionNumber,questionList){
 				+ '<div class="delivery_links">'
 				+ '<p> Order '+obj.header+' to <input type="text" placeholder="your postcode" name="postcode" id="postcode" autocomplete="off"> on <a href="https://www.just-eat.co.uk/area/'+pc+justeat+'" id="justeatlink">Just Eat</a> or <a href="https://deliveroo.co.uk/restaurants/exeter/exeter-city-centre?postcode='+pc+deliveroo+'" id="deliveroolink">Deliveroo</a>.'
 				+ '</div>'
+				+ '<div><div id="return_button" onclick="showQuestion('+1+',questionList)">Start again</div></div>'
 				);	
 			}			
 				
