@@ -105,9 +105,9 @@ var questionList = [
 	header: "a big kebab.", 
 	logo: 'kebab.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/kebabs',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=kebab'
 	}
 },
 {
@@ -116,9 +116,9 @@ var questionList = [
 	header: "a pizza.", 
 	logo: 'pizza.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/pizza',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=pizza'
 	}
 },
 {
@@ -127,9 +127,9 @@ var questionList = [
 	header: "a Japanese or sushi meal.", 
 	logo: 'sushi.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/japanese?cuisine=sushi',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=japanese'
 	}
 },
 {
@@ -138,7 +138,7 @@ var questionList = [
 	header: "a Thai.", 
 	logo: 'thai.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/thai',
 		ubereats: 'UberEats',
 		deliveroo: '&collection=thai'
 	}
@@ -149,7 +149,7 @@ var questionList = [
 	header: "an Indian.", 
 	logo: 'indian.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/indian',
 		ubereats: 'UberEats',
 		deliveroo: '&collection=indian'
 	}
@@ -160,7 +160,7 @@ var questionList = [
 	header: "a Chinese.", 
 	logo: 'chinese.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/chinese',
 		ubereats: 'UberEats',
 		deliveroo: '&collection=chinese'
 	}
@@ -171,7 +171,7 @@ var questionList = [
 	header: "a burger or some fast food.", 
 	logo: 'fast_food.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/american?cuisine=burgers&cuisine=fastfood',
 		ubereats: 'UberEats',
 		deliveroo: '&collection=burgers'
 	}
@@ -182,7 +182,7 @@ var questionList = [
 	header: "a portion of fish and chips.", 
 	logo: 'fish_and_chips.svg',
 	links:{
-		justeat: 'Just Eat',
+		justeat: '/fish-and-chips',
 		ubereats: 'UberEats',
 		deliveroo: '&collection=fish+and+chips'
 	}
