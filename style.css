@@ -8,14 +8,14 @@ body {
 	  #92B4E5 20px,
 	  #B5D8F2 20px,
 	  #B5D8F2 40px);
-	background-image: url("bg.png");
+	background-image: url("images/bg.png");
 	background-repeat: repeat;
 	background-size: 350px;
 	font-family: "Raleway", sans-serif; 
 	line-height: 1em;
 }
 
-.wrapper { 
+main{ 
   position: absolute;
   left: 50%;
   height: 100%;
@@ -43,10 +43,11 @@ body {
 	padding: 20px;}
 	
 	
-.answers {
+.options {
 	text-align:left;
 	display:inline-block;
-	margin: 0 auto;}
+	margin: 0 auto;
+	margin-bottom: 20px;}
 	
 .footer {
 	margin-top: 60px;
@@ -69,6 +70,35 @@ h3 {
 	padding: 0px;
 }
 
+.logo{width:150px;}
+
+#return_button{
+	display: inline-block;
+    color: #92B4E5;
+    border: 2px solid #92B4E5;	
+	padding:10px 20px 10px 20px;
+}
+#return_button:hover {
+    background: #eee;
+}
+input[type="text"] {
+    width: 11ch;
+    padding:0;
+	border: none;
+	padding-bottom:5px;
+	border-bottom: dashed 1px #555;
+    color: #555;
+    outline: 0;
+	text-align:center;
+}
+
+input[type="text"]:focus {
+	border-bottom: 2px solid #92B4E5;
+	padding-bottom:5px;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .wrapper {
     width: 100%;
@@ -87,6 +117,6 @@ h3 {
     font-size: 21px;
 	line-height:21px;
   }
-  
+ 
 }
 */
