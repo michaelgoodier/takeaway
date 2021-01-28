@@ -6,7 +6,7 @@ var questionList = [
 	type: 'q',
 	header: "What mood are you in?", 
 	options: {
-		a: 'Depressed, I don\'t give a fuck about myself, I want to gorge.', 
+		a: 'I don\'t give a fuck about myself, I want to massively gorge / I\'m feeling depressed.', 
 		b: 'I feel like a bit of comfort indulgment while watching a film, for example.', 
 		c: 'I can\'t be bothered to cook, but sort-of want something healthy.'
 	}, 
@@ -20,10 +20,10 @@ var questionList = [
 	key:2, 
 	back:1,
 	type: 'q',
-	header: "kfc/kebab", 
+	header: "Which describes you mood better?", 
 	options: {
-		a: 'fried chicken', 
-		b: 'kebab'
+		a: 'Honestly, I don\'t want to move.', 
+		b: 'Just feel like over-indulging with something a bit greasy'
 	}, 
 	result:{
 		a: 7,
@@ -36,8 +36,8 @@ var questionList = [
 	type: 'q',
 	header: "Which would you prefer:", 
 	options: {
-		a: 'A bit of variety with my order, several small things perhaps.', 
-		b: 'No, I\'m okay eating just one thing for ages.'
+		a: 'A bit of variety with my order, at least two elements to the meal.', 
+		b: 'I\'m okay eating just one thing for ages.'
 	}, 
 	result:{
 		a: 5,
@@ -48,10 +48,10 @@ var questionList = [
 	key:4, 
 	back:1,
 	type: 'q',
-	header: "sushi/thai", 
+	header: "Pick a flavour", 
 	options: {
-		a: 'sushi/japanese', 
-		b: 'thai'
+		a: 'Clean and savoury', 
+		b: 'Fresh and spicy'
 	}, 
 	result:{
 		a: 10,
@@ -78,10 +78,10 @@ var questionList = [
 	key:6,
 	back:5,	
 	type: 'q',
-	header: "burger v fish/chips question", 
+	header: "Do you feel like being a bit of a pig?", 
 	options: {
-		a: 'burger', 
-		b: 'fish and chips'
+		a: 'Yes I really don\'t care what I put in my body.', 
+		b: 'I\m not really bothered about calories but that doesn\'t really describe my attitude right now.'
 	}, 
 	result:{
 		a: 14,
@@ -140,7 +140,7 @@ var questionList = [
 	links:{
 		justeat: 'Just Eat',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=thai'
 	}
 },
 {
@@ -151,7 +151,7 @@ var questionList = [
 	links:{
 		justeat: 'Just Eat',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=indian'
 	}
 },
 {
@@ -162,18 +162,18 @@ var questionList = [
 	links:{
 		justeat: 'Just Eat',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=chinese'
 	}
 },
 {
 	key: 14, 
 	type: 'a',
-	header: "a burger / fast food.", 
+	header: "a burger or some fast food.", 
 	logo: 'fast_food.svg',
 	links:{
 		justeat: 'Just Eat',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=burgers'
 	}
 },
 {
@@ -184,7 +184,7 @@ var questionList = [
 	links:{
 		justeat: 'Just Eat',
 		ubereats: 'UberEats',
-		deliveroo: 'Deliveroo.'
+		deliveroo: '&collection=fish+and+chips'
 	}
 }
 ]
