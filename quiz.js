@@ -105,7 +105,7 @@ var questionList = [
 {
 	key:7, 
 	type: 'a',
-	header: "a bucket of fried chicken.", 
+	header: "a bucket of fried chicken", 
 	logo: 'chicken.svg',
 	links:{
 		justeat: '/chicken',
@@ -116,7 +116,7 @@ var questionList = [
 {
 	key:8, 
 	type: 'a',
-	header: "a big kebab.", 
+	header: "a big kebab", 
 	logo: 'kebab.svg',
 	links:{
 		justeat: '/kebabs',
@@ -127,7 +127,7 @@ var questionList = [
 {
 	key:9, 
 	type: 'a',
-	header: "a pizza.", 
+	header: "a pizza", 
 	logo: 'pizza.svg',
 	links:{
 		justeat: '/pizza',
@@ -138,7 +138,7 @@ var questionList = [
 {
 	key:10, 
 	type: 'a',
-	header: "a Japanese or sushi meal.", 
+	header: "a Japanese or sushi meal", 
 	logo: 'sushi.svg',
 	links:{
 		justeat: '/japanese?cuisine=sushi',
@@ -149,7 +149,7 @@ var questionList = [
 {
 	key:11, 
 	type: 'a',
-	header: "a Thai.", 
+	header: "a Thai", 
 	logo: 'thai.svg',
 	links:{
 		justeat: '/thai',
@@ -160,7 +160,7 @@ var questionList = [
 {
 	key: 12, 
 	type: 'a',
-	header: "an Indian.", 
+	header: "an Indian", 
 	logo: 'indian.svg',
 	links:{
 		justeat: '/indian',
@@ -182,7 +182,7 @@ var questionList = [
 {
 	key: 14, 
 	type: 'a',
-	header: "a burger or some fast food.", 
+	header: "a burger or some fast food", 
 	logo: 'fast_food.svg',
 	links:{
 		justeat: '/american?cuisine=burgers&cuisine=fastfood',
@@ -193,7 +193,7 @@ var questionList = [
 {
 	key: 15, 
 	type: 'a',
-	header: "a portion of fish and chips.", 
+	header: "a portion of fish and chips", 
 	logo: 'fish_and_chips.svg',
 	links:{
 		justeat: '/fish-and-chips',
@@ -248,7 +248,7 @@ function showQuestion(questionNumber,questionList){
 				justeat = obj.links.justeat;
 				deliveroo = obj.links.deliveroo;
 				output.push(
-				'<div class="header"><h3 class="centre">You should order ' + obj.header + '</h3></div>'
+				'<div class="header"><h3 class="centre">You should order ' + obj.header + '.</h3></div>'
 				+ '<img src="images/'+obj.logo+'" class="logo" />'
 				+ '<div class="delivery_links">'
 				+ '<p> Order '+obj.header+' to <input type="text" placeholder="your postcode" name="postcode" id="postcode" autocomplete="off"> on </p>'
