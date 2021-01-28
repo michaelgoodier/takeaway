@@ -22,7 +22,7 @@ var questionList = [
 	type: 'q',
 	header: "Which would you prefer:", 
 	options: {
-		a: 'A bit of variety with my order, at least two elements to the meal.', 
+		a: 'A bit of variety with my order, at least two different elements to the meal.', 
 		b: 'I\'m okay eating just one thing for ages.'
 	}, 
 	result:{
@@ -50,7 +50,7 @@ var questionList = [
 	type: 'q',
 	header: "Which would you prefer:", 
 	options: {
-		a: 'A bit of variety with my order, at least two elements to the meal.', 
+		a: 'A bit of variety with my order, at least two different elements to the meal.', 
 		b: 'I\'m okay eating just one thing for ages.'
 	}, 
 	result:{
@@ -94,8 +94,8 @@ var questionList = [
 	type: 'q',
 	header: "Do you feel like being a bit of a pig?", 
 	options: {
-		a: 'Yes I really don\'t care what I put in my body.', 
-		b: 'I\m not really bothered about calories but that doesn\'t really describe my attitude right now.'
+		a: 'Yes, tonight I really don\'t care about being "healthy".', 
+		b: 'While I don\'t necessarily have to eat something healthy, eating dirty doesn\'t form part of my motivating urge tonight.'
 	}, 
 	result:{
 		a: 14,
