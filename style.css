@@ -1,4 +1,8 @@
-html {height: 100%;}
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+html {height: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;}
 
 body {
 	background: 
@@ -64,12 +68,16 @@ h1 {
 	font-size: 48px;
 	line-height: 48px;
 	padding: 0px;
+	font-weight: 400;
+    margin: 10px 0;
 }
 h3 {
 	font-family: 'IBM Plex Sans', sans-serif; 
 	font-size: 26px;
 	line-height: 26px;
 	padding: 0px;
+	font-weight: 400;
+    margin: 10px 0;
 }
 
 .logo{width:150px;}
