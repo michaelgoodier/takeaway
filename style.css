@@ -116,6 +116,9 @@ input[type="text"] {
     color: #555;
     outline: 0;
 	text-align:center;
+	overflow: visible;
+	font: inherit;
+    margin: 0;
 }
 
 input[type="text"]:focus {
